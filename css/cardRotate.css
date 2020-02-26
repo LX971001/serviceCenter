@@ -1,0 +1,39 @@
+.courseLogo{
+
+    float: left;
+    margin-top: 1px;
+    position: relative;
+    box-sizing: border-box;
+    perspective: 800px;
+}
+
+.courseBefore{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    backface-visibility: hidden;
+    transition: 1s;
+
+}
+.courseAfter{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    color: #fff;
+    text-indent: 2em;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+
+}
+ .courseLogo:hover .courseBefore{
+    transform: rotateY(180deg);
+}
+.courseLogo:hover .courseAfter{
+    transform: rotateY(0deg);
+}
